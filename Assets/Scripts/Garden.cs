@@ -11,9 +11,10 @@ public class Garden : MonoBehaviour
     public float speed = 0.1f;
     private float timer = 0;
 
-
     Cell[,] grid = new Cell[SCREEN_WIDTH, SCREEN_HEIGHT];   
     public HUD hud;
+    public PlayButton playButton;
+    public PauseButton pauseButton;
     public bool simulationEnabled = false;
     private Sprite yellow;
     private Sprite black;
@@ -26,11 +27,24 @@ public class Garden : MonoBehaviour
         red = Resources.Load<Sprite>("Sprites/zero");
         EventManager.StartListening("SavePattern", SavePattern);
         EventManager.StartListening("LoadPattern", LoadPattern);
+        //EventManager.StartListening("LoadInfo", LoadInfo);
         PlaceCells();
     }
 
     void Update()
     {
+        if (pauseButton.IsButtonClicked && simulationEnabled)
+        {
+            simulationEnabled = false;
+        }
+        else if (playButton.IsButtonClicked && !simulationEnabled)
+        {
+            simulationEnabled = true;
+        }
+
+        playButton.ResetButton();
+        pauseButton.ResetButton();
+
         if (simulationEnabled)
         {
             if (timer >= speed)
@@ -151,18 +165,25 @@ public class Garden : MonoBehaviour
                     {
                         grid[x, y].LoadSprite(yellow);
                     }
-                    //grid[x, y].LoadSprite(yellow);
-                    //if (grid[x, y].isAlive)
-                    //{
-                        //grid[x, y].LoadSprite(yellow);
-                    //}
                 }
             }
 
-            if (Input.GetKeyUp(KeyCode.Space))
+/*            if (Input.GetKeyUp(KeyCode.Space))
             {
                 // Pause
-                simulationEnabled = !simulationEnabled;
+                if (!playButton.IsButtonClicked && !pauseButton.IsButtonClicked)
+                {
+                    simulationEnabled = !simulationEnabled;
+                }
+            }*/
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                // Pause
+                if (!playButton.IsButtonClicked && !pauseButton.IsButtonClicked)
+                {
+                    simulationEnabled = !simulationEnabled;
+                }
             }
 
             if (Input.GetKeyUp(KeyCode.S))
@@ -210,7 +231,7 @@ public class Garden : MonoBehaviour
                 foreach (int y in y1)
                 {
                     grid[x, y].SetAlive(true);
-                    grid[x, y].LoadSprite(yellow);
+                    grid[x, y].LoadSprite(black);
                 }
             }
 
@@ -219,7 +240,7 @@ public class Garden : MonoBehaviour
                 foreach (int y in y2)
                 {
                     grid[x, y].SetAlive(true);
-                    grid[x, y].LoadSprite(black);
+                    grid[x, y].LoadSprite(yellow);
                 }
             }
 
@@ -228,7 +249,7 @@ public class Garden : MonoBehaviour
                 foreach (int y in y3)
                 {
                     grid[x, y].SetAlive(true);
-                    grid[x, y].LoadSprite(yellow);
+                    grid[x, y].LoadSprite(black);
                 }
             }
 
@@ -237,14 +258,14 @@ public class Garden : MonoBehaviour
                 foreach (int y in y4)
                 {
                     grid[x, y].SetAlive(true);
-                    grid[x, y].LoadSprite(black);
+                    grid[x, y].LoadSprite(yellow);
                 }
             }
 
             if (x == 66)
             {
                 grid[x, 48].SetAlive(true);
-                grid[x, 48].LoadSprite(yellow);
+                grid[x, 48].LoadSprite(black);
             }
         }
     }

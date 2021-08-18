@@ -1,4 +1,4 @@
 public class Pattern
 {
-    public string patternString;
+    public string patternString ;
 }
