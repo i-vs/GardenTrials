@@ -18,7 +18,7 @@ The Game of Life was only one of Conway’s innumerable contributions to game th
 - If a live cell has exactly two or three live neighbors, it survives.
 - If a dead cell has three live neighbors, it will come to life.
 
-For this project I implemented a "garden of *Life*", as simple as it should be: a garden where the user can plant seeds (or cells) and bring plants and flowers to life. The plants can either survive through generations or die, according to the game's rules.* 
+For this project I implemented a "garden" of *Life*, as simple as it should be: a garden where the user can plant seeds (or cells) and bring plants and flowers to life. The plants can either survive through generations or die, according to the game's rules. 
 
 [As a tribute to the author](https://www.youtube.com/watch?v=E8kUJL04ELA), every lone [glider](https://conwaylife.com/wiki/Glider) in the garden is considered an *ant*.
 
@@ -27,13 +27,13 @@ For this project I implemented a "garden of *Life*", as simple as it should be: 
 - Two-dimensional cellular automata viewer.
 
 - Interactive gameplay:
-  - Possible to insert yellow <img src="Assets/Resources/Sprites/one.png" alt="Cell" width="8" height="8"> seeds and create patterns while the game is paused, and red <img src="Assets/Resources/Sprites/zero.png" alt="Cell" width="8" height="8"> seeds while the game is running to modify the garden state.
+  - Possible to insert yellow <img src="Assets/Resources/Sprites/one.png" alt="Cell" width="8" height="8"> seeds and create patterns while the game is paused, and red <img src="Assets/Resources/Sprites/zero.png" alt="Cell" width="8" height="8"> seeds while the game is running to modify the _garden_ state.
 
-  - Pause, Play, and Exit options to control the game.
+  - ```Pause```, ```Play```, and ```Exit``` options (buttons and shortcuts).
 
-  - A Rules button with a brief explanation of the game's rules.
+  - A ```Rules``` button with a brief explanation of the game's rules.
 
-  - Save and Load options for user-created patterns.
+  - ```Save``` and ```Load``` options for user-created patterns.
 
   - Some common patterns to load from the ```gardenpatterns``` file (names are used within the game context).
 
@@ -42,20 +42,20 @@ For this project I implemented a "garden of *Life*", as simple as it should be: 
 
 ## Technology Choices
 
-- Written and developed in C#, using Unity 2D ([Engine](https://store.unity.com/download?ref=personal) and [Script API](https://docs.unity3d.com/ru/2019.4/ScriptReference/index.html)).
-- UI Canvas system.
-- Executable (.exe for Windows).
+- Written and developed in C#, using Unity 2D ([Engine](https://store.unity.com/download?ref=personal) and [Script API](https://docs.unity3d.com/ru/2020.1/ScriptReference/index.html))
+- UI Canvas system
+- Executable (.exe only)
 
-### To be implemented
+### Possible improvements and new features
 1. Puzzles/challenges such as "reach a still-life in other side of the screen!".
-1. Population counter. (May be difficult to keep track as dead cells will probably be removed from the grid).
+1. Population counter.
 1. Camera size: remove boundaries from the grid area.  
 1. Sliders to control the seeds' growth speed.
 1. Add information about the project and the game.
 
 ### To install:
 - Download the files tagged #gardentrials on [Releases](https://github.com/ivsgit/GardenTrials/releases/new) (Windows 7 SP1+, 8, 10, 64-bit versions only; Full screen and Window versions included).
-- Or clone this repo and run with Unity's editor (created with Unity 2D Version 2020.3.15f2)
+- Or clone this repo and run with Unity's editor (created with Unity 2D Version 2020.3.15f2).
 #
 ###
 ####
