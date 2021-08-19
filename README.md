@@ -54,7 +54,7 @@ For this project I implemented a "garden" of *Life*, as simple as it should be: 
 1. Add information about the project and the game.
 
 ### To install:
-- Download the files tagged #gardentrials on [Releases](https://github.com/ivsgit/GardenTrials/releases/new) (Windows 7 SP1+, 8, 10, 64-bit versions only; Full screen and Window versions included).
+- Download the files tagged #gardentrials on [Releases](https://github.com/ivsgit/GardenTrials/releases) (Windows 7 SP1+, 8, 10, 64-bit versions only; Full screen and Window versions included).
 - Or clone this repo and run with Unity's editor (created with Unity 2D Version 2020.3.15f2).
 #
 ###
