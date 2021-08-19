@@ -46,10 +46,10 @@ For this project I implemented a "garden" of *Life*, as simple as it should be: 
 - UI Canvas system
 - Executable (.exe only)
 
-### Possible improvements and new features
-1. Puzzles/challenges such as "reach a still-life in other side of the screen!".
+### Future improvements
+
 1. Population counter.
-1. Camera size: remove boundaries from the grid area.  
+1. Expand/unbound the grid area. 
 1. Sliders to control the seeds' growth speed.
 1. Add information about the project and the game.
 
