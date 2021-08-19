@@ -37,7 +37,7 @@ For this project I implemented a "garden" of *Life*, as simple as it should be: 
 
   - Some common patterns to load from the ```gardenpatterns``` file (names are used within the game context).
 
-- Color-changing seeds according to the population size and growth: 
+- Color-changing seeds according to the population growth: 
   - <img src="Assets/Resources/Sprites/two.png" alt="Cell" width="8" height="8"> for 2 neighbors and <img src="Assets/Resources/Sprites/three.png" alt="Cell" width="8" height="8"> for 3 neighbors.
 
 ## Technology Choices
