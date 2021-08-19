@@ -4,7 +4,7 @@
 An interactive visualization of John Conway’s cellular automaton [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
 
-## Undecidable Problems, Patterns, and Life
+## Undecidable Problems, Patterns, and _Life_
 
 Most computer science problems are like logical puzzles: they can be solved with practice and pattern recognition.
 Data structures and algorithms are patterns that can help us find different solutions for things that normally have *predictable behavior*. However, some problems are simply [undecidable](https://en.wikipedia.org/wiki/Halting_problem).
