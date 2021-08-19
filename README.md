@@ -60,4 +60,4 @@ For this project I implemented a "garden" of *Life*, as simple as it should be: 
 ###
 ####
 ######
-*Please note that this is a work in progress. My goal with this project was to learn and understand new concepts for study purposes and personal interest. Some of the features and algorithms I would like to implement (such as allowing patterns with quadractic growth to expand the grid dynamically) may require more than just a few weeks of study; I plan to use different platforms and technologies in the future. 
+*Please note that this is a work in progress. My goal with this project was to learn and understand new concepts for study purposes and personal interest. Some of the features and algorithms I would like to implement (such as allowing patterns with quadractic growth to expand the grid dynamically) may require more than just a few weeks of study; I plan to use different platforms and technologies in the future.
