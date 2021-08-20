@@ -11,7 +11,7 @@ Data structures and algorithms are patterns that can help us find different solu
 
 A great example of (_generally_) unpredictable patterns can be experimented in John Conway’s cellular automaton ["Game of Life"](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life); a “no-player, never-ending game.”, in the author's words. 
 
-The Game of Life was only one of Conway’s innumerable contributions to game theory and mathematics. This popular celullar automata simulation takes place on a 2-dimensional grid. Cells can either survive for generations or die, given the following rules:
+The Game of Life was only one of Conway’s innumerable contributions to game theory and mathematics. This popular cellular automata simulation takes place on a 2-dimensional grid. Cells can either survive for generations or die, given the following rules:
 
 - If a live cell has less than two live neighbors, it dies of underpopulation.
 - If a live cell has more than three live neighbors, it dies of overpopulation.
@@ -27,7 +27,7 @@ For this project I implemented a "garden" of *Life*, as simple as it should be: 
 - Two-dimensional cellular automata viewer.
 
 - Interactive gameplay:
-  - Possible to insert yellow <img src="Assets/Resources/Sprites/one.png" alt="Cell" width="8" height="8"> seeds and create patterns while the game is paused, and red <img src="Assets/Resources/Sprites/zero.png" alt="Cell" width="8" height="8"> seeds while the game is running to modify the _garden_ state.
+  - Possible to insert yellow <img src="Assets/Resources/Sprites/one.png" alt="yellow Cell" width="8" height="8"> seeds and create patterns while the game is paused, and red <img src="Assets/Resources/Sprites/zero.png" alt="Cell" width="8" height="8"> seeds while the game is running to modify the _garden_ state.
 
   - ```Pause```, ```Play```, and ```Exit``` options (buttons and shortcuts).
 
@@ -38,7 +38,7 @@ For this project I implemented a "garden" of *Life*, as simple as it should be: 
   - Some common patterns to load from the ```gardenpatterns``` file (names are used within the game context).
 
 - Color-changing seeds according to the population growth: 
-  - <img src="Assets/Resources/Sprites/two.png" alt="Cell" width="8" height="8"> for 2 neighbors and <img src="Assets/Resources/Sprites/three.png" alt="Cell" width="8" height="8"> for 3 neighbors.
+  - <img src="Assets/Resources/Sprites/two.png" alt="red Cell" width="8" height="8"> for 2 neighbors and <img src="Assets/Resources/Sprites/three.png" alt="green Cell" width="8" height="8"> for 3 neighbors.
 
 ## Technology Choices
 
